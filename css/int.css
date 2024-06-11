@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Teko:wght@300..700&display=swap');
+/*Fugaz One*/
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Teko:wght@300..700&display=swap');
+
+/*Livvic*/
+@font-face {
+    font-family: Tit;
+    src: url(../font/masque/MASQUE__.ttf);
+    /*Tit*/
+}
+
+:root {
+    --tit1: Tit;
+    --tit2: Fugaz One;
+    --tit3: Livvic;
+    --cor1: #23694d;
+    --cor2: #15b3a8;
+    --cor3: #97cffb;
+    --cor4: #dced9f;
+    --cor5: #dec14b;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Configuração do main integrantes*/
+
+main>h1 {
+    font-family: var(--tit2);
+    text-align: center;
+    margin: 30px;
+    padding: 10px 20px;
+    text-shadow: 1px 1px 4px var(--cor5);
+    font-size: 2em;
+}
+
+/*Configuração de integrantes*/
+
+.int1 {
+    background-color: var(--cor3);
+    width: 80%;
+    display: flex;
+    margin: auto;
+    border: 3px solid black;
+    margin-bottom: 5px;
+}
+
+.int2 {
+    background-color: var(--cor4);
+    width: 80%;
+    display: flex;
+    margin: auto;
+    border: 3px solid black;
+    margin-bottom: 5px;
+}
+
+.foto {
+    display: inline-block;
+    width: 15%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    display: inline-block;
+    width: 85%;
+}
+
+.int1>.text>h2 {
+    text-align: center;
+    font-family: var(--tit2);
+    padding: 10px;
+    text-shadow: 1px 1px 3px var(--cor5);
+    font-size: 1.7em;
+}
+
+.int2>.text>h2 {
+    text-align: center;
+    font-family: var(--tit2);
+    padding: 10px;
+    text-shadow: 1px 1px 3px var(--cor2);
+    font-size: 1.7em;
+}
+
+.text>p {
+    padding: 10px;
+    text-indent: 15px;
+    text-align: justify;
+    font-size: 1em;
+}

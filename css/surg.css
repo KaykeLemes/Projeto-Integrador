@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Teko:wght@300..700&display=swap');
+/*Fugaz One*/
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Teko:wght@300..700&display=swap');
+
+/*Livvic*/
+@font-face {
+    font-family: Tit;
+    src: url(../font/masque/MASQUE__.ttf);
+    /*Tit*/
+}
+
+:root {
+    --tit1: Tit;
+    --tit2: Fugaz One;
+    --tit3: Livvic;
+    --cor1: #23694d;
+    --cor2: #15b3a8;
+    --cor3: #97cffb;
+    --cor4: #dced9f;
+    --cor5: #dec14b;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+}
+
+main>h2 {
+    font-family: var(--tit2);
+    font-size: 2em;
+    text-indent: 20px;
+    margin: 20px 0px;
+    background-image: linear-gradient(90deg, var(--cor2), 30%, white);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+main>p {
+    line-height: 2em;
+    text-align: justify;
+    text-indent: 30px;
+}
