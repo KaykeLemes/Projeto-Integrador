@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de LED - ESP32</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .ligar {
+            background-color: green;
+            color: white;
+        }
+
+        .desligar {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Controle de LED com ESP32</h1>
+    <button class="ligar" onclick="controlarLED('ligar')">Ligar</button>
+    <button class="desligar" onclick="controlarLED('desligar')">Desligar</button>
+    <p id="status"></p>
+
+    <script>
+        const ESP32_IP = 'http://192.168.0.114'; // Substitua pelo IP do ESP32
+
+        function controlarLED(acao) {
+            fetch(`${ESP32_IP}/${acao}`)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('status').innerText = data;
+                })
+                .catch(error => {
+                    document.getElementById('status').innerText = 'Erro na comunicação';
+                    console.error('Erro:', error);
+                });
+        }
+    </script>
+</body>
+
+</html>
