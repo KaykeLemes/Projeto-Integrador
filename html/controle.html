@@ -38,7 +38,7 @@
     <p id="status"></p>
 
     <script>
-        const ESP32_IP = 'http://192.168.0.114'; // Substitua pelo IP do ESP32
+        const ESP32_IP = 'http://192.168.0.108'; // Substitua pelo IP do ESP32
 
         function controlarLED(acao) {
             fetch(`${ESP32_IP}/${acao}`)
@@ -52,6 +52,8 @@
                 });
         }
     </script>
+
+    <a href="monitoramento.html">proximo passo</a>
 </body>
 
 </html>

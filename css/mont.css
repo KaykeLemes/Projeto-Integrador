@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Teko:wght@300..700&display=swap');
+/*Fugaz One*/
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Teko:wght@300..700&display=swap');
+
+/*Livvic*/
+@font-face {
+    font-family: Tit;
+    src: url(../font/masque/MASQUE__.ttf);
+    /*Tit*/
+}
+
+:root {
+    --tit1: Tit;
+    --tit2: Fugaz One;
+    --tit3: Livvic;
+    --cor1: #23694d;
+    --cor2: #15b3a8;
+    --cor3: #97cffb;
+    --cor4: #dced9f;
+    --cor5: #dec14b;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+    font-family: var(--tit3);
+}
+
+main>h1 {
+    font-family: var(--tit2);
+    text-align: center;
+    margin: 30px;
+    padding: 10px 20px;
+    text-shadow: 1px 1px 4px var(--cor3);
+    font-size: 2em;
+}
+
+.cent_agua {
+    width: 100%;
+    height: 50vh;
+    /*background-color: #23694d;*/
+    display: flex;
+}
+
+.botoes {
+    width: 50%;
+    /*background-color: #15b3a8;*/
+    height: 100%;
+    align-content: center;
+
+}
+
+.botoes>button {
+    width: 90%;
+    padding: 10px;
+    margin: 15px 5% 15px 5%;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: var(--tit3);
+    font-size: 1.2em;
+}
+
+.botoes>button:hover {
+    background-color: rgb(42, 211, 42);
+}
+
+.lamp {
+    /*background-color: #dced9f;*/
+    width: 50%;
+    height: 100%;
+}
+
+.tank {
+    width: 100%;
+    height: 75%;
+    /*background-color: #97cffb;*/
+}
+
+.led1 {
+    width: 50%;
+    /*background-color: #dec14b;*/
+    height: 30%;
+}
+
+.led {
+    width: 100%;
+    height: 75%;
+    /*background-color: antiquewhite;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.a,
+.b {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 3px black solid;
+}
+
+.text {
+    text-align: center;
+    height: 25%;
+    font-family: var(--tit3);
+    font-weight: 600;
+}
