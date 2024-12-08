@@ -35,8 +35,17 @@ main>h1 {
     text-align: center;
     margin: 30px;
     padding: 10px 20px;
-    text-shadow: 1px 1px 4px var(--cor3);
+    text-shadow: 1px 1px 4px var(--cor5);
     font-size: 2em;
+}
+
+main>h2 {
+    font-family: var(--tit3);
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    text-shadow: 1px 1px 4px var(--cor2);
+    font-size: 1.6em;
 }
 
 .cent_agua {
@@ -65,7 +74,7 @@ main>h1 {
 }
 
 .botoes>button:hover {
-    background-color: rgb(42, 211, 42);
+    background-color: rgb(87, 189, 87);
 }
 
 .lamp {
@@ -77,6 +86,7 @@ main>h1 {
 .tank {
     width: 100%;
     height: 75%;
+    display: flex;
     /*background-color: #97cffb;*/
 }
 
@@ -108,4 +118,100 @@ main>h1 {
     height: 25%;
     font-family: var(--tit3);
     font-weight: 600;
+}
+
+.tankReal {
+    width: 100%;
+    height: 50vh;
+    /*background-color: #97cffb;*/
+    display: flex;
+}
+
+.tank1,
+.tank2,
+.tank3 {
+    /*background-color: aquamarine;*/
+    width: 24%;
+    height: 100%;
+    margin-left: 7%;
+}
+
+.reserv {
+    width: 100%;
+    height: 90%;
+    /*background-color: bisque;*/
+}
+
+.nivel_1_a {
+    height: 33%;
+    border-left: black solid 5px;
+    border-right: black solid 5px;
+    background-color: rgb(239, 239, 239);
+}
+
+.nivel_2_a {
+    height: 33%;
+    border-left: black solid 5px;
+    border-right: black solid 5px;
+    background-color: rgb(239, 239, 239);
+}
+
+.nivel_3_a {
+    height: 33%;
+    border-left: black solid 5px;
+    border-right: black solid 5px;
+    border-bottom: black solid 5px;
+    background-color: rgb(80, 80, 198);
+}
+
+.nivel_1_b {
+    height: 33%;
+    border-left: black solid 5px;
+    border-right: black solid 5px;
+    background-color: rgb(239, 239, 239);
+}
+
+.nivel_2_b {
+    height: 33%;
+    border-left: black solid 5px;
+    border-right: black solid 5px;
+    background-color: rgb(80, 80, 198);
+}
+
+.nivel_3_b {
+    height: 33%;
+    border-left: black solid 5px;
+    border-right: black solid 5px;
+    border-bottom: black solid 5px;
+    background-color: rgb(80, 80, 198);
+}
+
+.nivel_1_c {
+    height: 33%;
+    border-left: black solid 5px;
+    border-right: black solid 5px;
+    background-color: rgb(80, 80, 198);
+}
+
+.nivel_2_c {
+    height: 33%;
+    border-left: black solid 5px;
+    border-right: black solid 5px;
+    background-color: rgb(80, 80, 198);
+}
+
+.nivel_3_c {
+    height: 33%;
+    border-left: black solid 5px;
+    border-right: black solid 5px;
+    border-bottom: black solid 5px;
+    background-color: rgb(80, 80, 198);
+}
+
+.tank1>.text,
+.tank2>.text,
+.tank3>.text {
+    height: 10%;
+    align-content: center;
+    font-size: 1.2em;
 }
