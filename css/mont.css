@@ -81,13 +81,15 @@ main>h2 {
     /*background-color: #dced9f;*/
     width: 50%;
     height: 100%;
+    align-content: center;
 }
 
 .tank {
     width: 100%;
-    height: 75%;
     display: flex;
     /*background-color: #97cffb;*/
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .led1 {
@@ -105,6 +107,37 @@ main>h2 {
     align-items: center;
 }
 
+.motores {
+    width: 100%;
+    display: flex;
+}
+
+.mot1,
+.mot2,
+.mot3 {
+    width: 33%;
+    height: 100%;
+    /*background-color: #97cffb;*/
+    display: flex;
+    justify-content: space-around;
+}
+
+.ledm1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 3px black solid;
+    align-self: center;
+}
+
+.textm1 {
+    align-content: center;
+}
+
+.textm1>p {
+    font-weight: 600;
+}
+
 .a,
 .b {
     width: 50px;
@@ -113,7 +146,7 @@ main>h2 {
     border: 3px black solid;
 }
 
-.text {
+.led1>.text>p {
     text-align: center;
     height: 25%;
     font-family: var(--tit3);
@@ -125,6 +158,7 @@ main>h2 {
     height: 50vh;
     /*background-color: #97cffb;*/
     display: flex;
+    padding-bottom: 30px;
 }
 
 .tank1,
@@ -208,10 +242,12 @@ main>h2 {
     background-color: rgb(80, 80, 198);
 }
 
-.tank1>.text,
-.tank2>.text,
-.tank3>.text {
+.tank1>.text>p,
+.tank2>.text>p,
+.tank3>.text>p {
     height: 10%;
-    align-content: center;
     font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
 }
