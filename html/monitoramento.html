@@ -34,11 +34,28 @@
         <h2 style="margin-top: 15px;">Controle Hidraulico</h2>
         <div class="cent_agua">
             <div class="botoes">
-                <button>Habilitar o sistema</button>
-                <button>Desligar o sistema</button>
-                <button>Esvaziar reservatório primário</button>
-                <button>Esvaziar reservatório secundário</button>
+                <button onclick="controlarSistema('habilitar')">Habilitar o sistema</button>
+                <button onclick="controlarSistema('desabilitar')">Desligar o sistema</button>
+                <button onclick="controlarSistema('esvaziar_tanque1')">Esvaziar reservatório primário</button>
+                <button onclick="controlarSistema('esvaziar_tanque2')">Esvaziar reservatório secundário</button>
             </div>
+
+            <script>
+                const ESP32_IP = 'http://192.168.0.108'; // Substitua pelo IP do ESP32
+
+                function controlarSistema(acao) {
+                    fetch(`${ESP32_IP}/${acao}`)
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('status').innerText = data;
+                        })
+                        .catch(error => {
+                            document.getElementById('status').innerText = 'Erro na comunicação';
+                            console.error('Erro:', error);
+                        });
+                }
+            </script>
+
             <div class="lamp">
                 <div class="tank">
                     <div class="led1">
